@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Royaal Coats</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+         <div class="logo-container">
+            <img src="logo.jpg" alt="Royaal Coats Logo" class="logo-img">
+            <div class="brand-name">ROYAAL COATS </div><div> </div><div> </div><div> </div>
+			<a href="tel:+917708072382" style="font-size: 1.2rem; text-decoration: none; color: gold;">
+            <i class="fas fa-phone-alt" style="margin-right: 8px;"></i>Call Us: 7708072382
+        </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+           <h1 class="section-title">Contact Us</h1>
+
+<div class="contact-form">
+  <!-- JS will build a proper mailto: link so the email client opens with a full message -->
+  <form id="contactForm">
+    <div class="form-group">
+      <input id="name" type="text" name="Name" placeholder="Your Name" required>
+    </div>
+
+    <div class="form-group">
+      <input id="email" type="email" name="Email" placeholder="Your Email" required>
+    </div>
+
+    <div class="form-group">
+      <input id="phone" type="tel" name="Phone" placeholder="Phone Number">
+    </div>
+
+    <div class="form-group">
+      <textarea id="message" name="Message" rows="5" placeholder="Message / Service Inquiry" required></textarea>
+    </div>
+
+    <div style="text-align:center;">
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </div>
+  </form>
+</div>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+  e.preventDefault(); // stop normal form submission
+
+  // Collect values
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  // Build email subject and body (encode URI components)
+  const to = 'Royaalcoats2012@gmail.com';
+  const subject = encodeURIComponent('Website Contact Form Inquiry');
+  // Use CRLF for newlines in mailto
+  const bodyLines = [
+    `Name: ${name}`,
+    `Email: ${email}`,
+    `Phone: ${phone || 'N/A'}`,
+    '',
+    'Message:',
+    message
+  ];
+  const body = encodeURIComponent(bodyLines.join('\r\n'));
+
+  // Create mailto link
+  const mailtoLink = `mailto:${to}?subject=${subject}&body=${body}`;
+
+  // Open default mail client
+  window.location.href = mailtoLink;
+
+  // Optional: show a small in-page notice (since mail client opens in a new app or tab)
+  // You can uncomment next lines to show a quick alert
+  // alert('Your email client should open. Please review the message and click Send.');
+});
+</script>
+
+
+           <div style="text-align: center; margin-top: 3rem;">
+  <h3>
+    <a href="https://www.google.com/maps?q=18/2A,+Jaganatha+Industrial+Area,+Behind+CRI+Pumps,+Ganapathi,+Chinnavedampatti,+Coimbatore,+Tamil+Nadu+641049"
+       target="_blank"
+       style="text-decoration: none; color: #0b63a5;">
+        <i class="fas fa-map-marker-alt" style="margin-right: 8px; color: #e63946;"></i>
+        Visit Us
+    </a>
+</h3>
+
+<p>18/2A, Jaganatha Industrial Area, Behind CRI Pumps, Ganapathi, Chinnavedampatti,</p>
+<p>Coimbatore, Tamil Nadu 641049</p>
+
+<p>Email: <a href="mailto:Royaalcoats2012@gmail.com">Royaalcoats2012@gmail.com</a></p>
+
+
+    <div style="margin-top: 1.5rem;">
+        <a href="tel:+917708072382" style="font-size: 1.2rem; text-decoration: none; color: #0b63a5;">
+            <i class="fas fa-phone-alt" style="margin-right: 8px;"></i>Call Us: 7708072382
+        </a>
+    </div>
+</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Royaal Coats. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
