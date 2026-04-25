@@ -1522,12 +1522,12 @@
       </div>
       <div class="cform reveal" style="transition-delay:.2s">
         <div class="cform-row">
-          <div class="fg"><label>Your Name</label><input type="text" id="name" placeholder="e.g. Ravi Kumar"></div>
-          <div class="fg"><label>Phone / Email</label><input type="text" id="contact" placeholder="+91 ..."></div>
+          <div class="fg"><label>Your Name</label><input type="text" id="wa_name" placeholder="e.g. Ravi Kumar"></div>
+          <div class="fg"><label>Phone / Email</label><input type="text" id="wa_contact" placeholder="+91 ..."></div>
         </div>
         <div class="fg">
           <label>Service Required</label>
-          <select id="service">
+          <select id="wa_service">
             <option value="">Select a service...</option>
             <option>Industrial Coating</option>
             <option>Architectural Coating</option>
@@ -1538,7 +1538,7 @@
             <option>Other / Not Sure</option>
           </select>
         </div>
-        <div class="fg"><label>Project Details</label><textarea id="details"
+        <div class="fg"><label>Project Details</label><textarea id="wa_details"
             placeholder="Describe your parts, quantity, finish requirements, deadlines..."></textarea></div>
         <button class="btn-gold" onclick="sendToWhatsApp()"
           style="width:100%; padding:1.1rem; font-size:0.75rem; cursor:pointer; border:none; letter-spacing:0.2em;">
@@ -1660,10 +1660,10 @@
     });
 
     function sendToWhatsApp() {
-      const nameEl = document.getElementById('name');
-      const contactEl = document.getElementById('contact');
-      const serviceEl = document.getElementById('service');
-      const detailsEl = document.getElementById('details');
+      const nameEl = document.getElementById('wa_name');
+      const contactEl = document.getElementById('wa_contact');
+      const serviceEl = document.getElementById('wa_service');
+      const detailsEl = document.getElementById('wa_details');
 
       const name = nameEl.value.trim();
       const contact = contactEl.value.trim();
