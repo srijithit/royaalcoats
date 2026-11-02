@@ -47,7 +47,10 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["LocalBusiness", "ProfessionalService"],
+        "@type": [
+          "LocalBusiness",
+          "ProfessionalService"
+        ],
         "@id": "https://royaalcoats.com/#organization",
         "name": "Royaal Coats",
         "alternateName": "Royaal Coats Powder Coating Coimbatore",
@@ -55,7 +58,10 @@
         "logo": "https://royaalcoats.com/logo.png",
         "image": "https://royaalcoats.com/logo.png",
         "description": "Professional powder coating services in Coimbatore for industrial machinery parts, aluminium profiles, structural steel, automotive components, and metal furniture. Electrostatic application, multi-stage pretreatment, and batch processing since 2012.",
-        "telephone": ["+917708072382", "+919943172382"],
+        "telephone": [
+          "+917708072382",
+          "+919943172382"
+        ],
         "email": "Royaalcoats2012@gmail.com",
         "priceRange": "$$",
         "currenciesAccepted": "INR",
@@ -77,20 +83,51 @@
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
             "opens": "09:00",
             "closes": "18:00"
           }
         ],
         "areaServed": [
-          { "@type": "City", "name": "Coimbatore" },
-          { "@type": "AdministrativeArea", "name": "Chinnavedampatti" },
-          { "@type": "AdministrativeArea", "name": "Ganapathy" },
-          { "@type": "AdministrativeArea", "name": "Saravanampatti" },
-          { "@type": "AdministrativeArea", "name": "Peelamedu" },
-          { "@type": "AdministrativeArea", "name": "Kalapatti" },
-          { "@type": "AdministrativeArea", "name": "Vilankurichi" },
-          { "@type": "AdministrativeArea", "name": "Sivanandhapuram" }
+          {
+            "@type": "City",
+            "name": "Coimbatore"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Chinnavedampatti"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Ganapathy"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Saravanampatti"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Peelamedu"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Kalapatti"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Vilankurichi"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Sivanandhapuram"
+          }
         ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
@@ -198,6 +235,101 @@
               "@type": "Answer",
               "text": "Electrostatic powder coating provides superior scratch resistance, impact durability, corrosion protection, and uniform film thickness without drips or runs. It is eco-friendly with zero VOC emissions and outlasts conventional liquid paint by years."
             }
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://royaalcoats.com/#website",
+        "url": "https://royaalcoats.com/",
+        "name": "Royaal Coats",
+        "alternateName": [
+          "Royaal Coats Coimbatore",
+          "Royaal Coats Powder Coating"
+        ],
+        "description": "Professional powder coating services in Coimbatore for industrial machinery parts, aluminium profiles, structural steel, automotive components, and metal furniture.",
+        "publisher": {
+          "@id": "https://royaalcoats.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "hasPart": [
+          {
+            "@type": "WebPage",
+            "@id": "https://royaalcoats.com/#about",
+            "name": "About Us",
+            "url": "https://royaalcoats.com/#about",
+            "description": "Learn about Royaal Coats, established in 2012 in Coimbatore, our facility, experience, and commitment to quality."
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://royaalcoats.com/#services",
+            "name": "Powder Coating Services",
+            "url": "https://royaalcoats.com/#services",
+            "description": "Explore our industrial machinery, aluminium profile, automotive components, and metal furniture coating services."
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://royaalcoats.com/#process",
+            "name": "Our Coating Process",
+            "url": "https://royaalcoats.com/#process",
+            "description": "Our 4-step precision process: surface preparation, multi-stage pretreatment, electrostatic coating, and oven curing."
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://royaalcoats.com/#faq",
+            "name": "FAQ",
+            "url": "https://royaalcoats.com/#faq",
+            "description": "Answers to common powder coating questions on metals, colors, finishes, recoating, and bulk order turnaround."
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://royaalcoats.com/#contact",
+            "name": "Get a Quote",
+            "url": "https://royaalcoats.com/#contact",
+            "description": "Contact Royaal Coats in Chinnavedampatti, Coimbatore for competitive pricing, free consultation, and instant quotes."
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://royaalcoats.com/#navigation",
+        "name": "Main Navigation Sitelinks",
+        "description": "Primary sitelinks and navigation for Royaal Coats website",
+        "itemListElement": [
+          {
+            "@type": "SiteNavigationElement",
+            "position": 1,
+            "name": "About",
+            "description": "About Royaal Coats, heritage, and powder coating expertise in Coimbatore",
+            "url": "https://royaalcoats.com/#about"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 2,
+            "name": "Services",
+            "description": "Industrial, aluminium, automotive, and metal furniture powder coating services",
+            "url": "https://royaalcoats.com/#services"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 3,
+            "name": "Process",
+            "description": "Our 4-step pretreatment, electrostatic application, and precision curing process",
+            "url": "https://royaalcoats.com/#process"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 4,
+            "name": "FAQ",
+            "description": "Frequently asked questions regarding powder coating colors, materials, and pricing",
+            "url": "https://royaalcoats.com/#faq"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 5,
+            "name": "Get Quote",
+            "description": "Request a quotation and consult with our powder coating engineers in Coimbatore",
+            "url": "https://royaalcoats.com/#contact"
           }
         ]
       }
@@ -1460,8 +1592,8 @@
 <body>
 
   <!-- NAV -->
-  <nav>
-    <a href="#home" class="nav-logo">
+  <nav aria-label="Primary Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+    <a href="#home" class="nav-logo" aria-label="Royaal Coats Home">
       <img
         src="logo.png"
         alt="Royaal Coats Logo">
@@ -1469,13 +1601,13 @@
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
       <span></span><span></span><span></span>
     </button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#process">Process</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contact" class="nav-cta">Get Quote</a></li>
+    <ul class="nav-links" id="navLinks" role="menubar">
+      <li><a href="#home" itemprop="url"><span itemprop="name">Home</span></a></li>
+      <li><a href="#about" itemprop="url"><span itemprop="name">About</span></a></li>
+      <li><a href="#services" itemprop="url"><span itemprop="name">Services</span></a></li>
+      <li><a href="#process" itemprop="url"><span itemprop="name">Process</span></a></li>
+      <li><a href="#faq" itemprop="url"><span itemprop="name">FAQ</span></a></li>
+      <li><a href="#contact" class="nav-cta" itemprop="url"><span itemprop="name">Get Quote</span></a></li>
     </ul>
   </nav>
 
@@ -1855,6 +1987,7 @@
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#process">Our Process</a></li>
+          <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
